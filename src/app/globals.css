@@ -1,27 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Creepster&display=swap");
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  width: 1440px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+nav {
+  width: 1170px;
+  height: 38px;
+  align-items: center;
+  padding: 1rem;
+}
+
+.middleNav {
+  display: flex;
+  flex-direction: row;
+
+  & div {
+    width: 8rem;
+    padding: 10px 20px 10px 20px;
   }
+}
+#BrandLogo {
+  font-family: "Creepster", system-ui;
+  font-weight: bolder;
+  /* border: 1px solid black; */
+  font-style: italic;
+  border-radius: 8px;
+  padding: 5px;
+  color: white;
+  background-color: black;
+}
+
+.SearchBar {
+  width: 243px;
+  height: 38px;
+  background-color: #f5f5f5;
+}
+
+input::placeholder {
+  color: #7a7a7a;
 }
